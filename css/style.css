@@ -15,6 +15,7 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #33414e;
   height: 100vh;
+  width: 100vw;
 }
 .header {
   background-color: #171717;
@@ -99,15 +100,6 @@ body {
     bottom: 100px;
     right: 50px;
 }
-
-.header__github {
-  width: 32px;
-  height: 32px;
-  fill: #000;
-  display: flex;
-  top: 40px;
-}
-
 .social {
   margin: 0;
   padding: 0;
@@ -221,6 +213,7 @@ button svg {
     top: 4px;
   }
 
+
   .header_nav {
     width: 10%;
     left: 62%;
@@ -241,7 +234,7 @@ button svg {
 
 }
 
-@media (min-width: 480px) and (max-width: 684px) {
+@media (min-width: 480px) and (max-width: 600px) {
   .header_brand {
     width: 40%;
     margin-left: -5%;
@@ -251,38 +244,15 @@ button svg {
   }
     .header_nav {
     width: 10%;
-    left: 40%;
+    left: 60%;
   }
   .nav-link {
     padding: 10px;
     font-size: 12px;
   }
-  .header_social {
-    display: flex;
-    left: 100px;
-    bottom: 96px; 
-  }
-
-  .button {
-    width: 110px;
-    height: 22px;
-  }
-  .header__github {
-    width: 25px;
-    position: relative;
-    top: -2px;
-    left: -114px;
-  }
-  .header__facebook {
-    width: 25px;
-    top: -2px;
-  }
-  .header__twitter {
-    width: 25px;
-  }
-  .button {
-    font-size: 8px;
-  }
+.header_social {
+  display: none;
+}
   .button__icon {
     width: 12px;
     height: 12px;
@@ -296,39 +266,49 @@ button svg {
     font-size: 1.1rem;
   }
 }
-@media (min-width: 685px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 767px) {
   .header_brand {
     width: 40%;
-    margin-left: 5%;
+    margin-left: -6%;
+    margin-top: 4px;
   }
     .header_nav {
     width: 10%;
-    left: 68%;
+    left: 38%;
+    margin-top: 18px;
   }
   .nav-link {
     padding: 10px;
   }
   .header_social {
-    display: none;
-    left: 330px;
+    display: flex;
+    left: 100px;
     bottom: 96px;
+    margin-top: -5px;
   }
   .button {
-    width: 110px;
-    height: 22px;
+    width: 100px;
+    height: 0px;
+    font-size: 8px;
+  }
+  .header__twitter {
+    width: 25px;
+  }
+  .header__facebook {
+    width: 25px;
   }
   .header__github {
     width: 25px;
     position: relative;
-    top: -4px;
-  }
-  .button {
-    font-size: 8px;
+    left: -15vw;
   }
   .button__icon {
     width: 12px;
     height: 12px;
     margin-right: 3px;
+  }
+  main {
+    width: 50px;
   }
     h2 {
     font-size: 1.6rem;
@@ -338,12 +318,48 @@ button svg {
     font-size: 1.1rem;
   }
 }
-
+@media (min-width: 768px) and (max-width: 992px) {
+    .header__github {
+    width: 25px;
+    position: relative;
+    left: -12.9vw;
+  }
+  .header_brand {
+    width: 40%;
+    margin-left: -6%;
+    margin-top: 4px;
+  }
+    .header_nav {
+    width: 10%;
+    left: 42%;
+    margin-top: 18px;
+  }
+  .nav-link {
+    padding: 10px;
+  }
+  .header_social {
+    display: flex;
+    left: 100px;
+    bottom: 96px;
+    margin-top: -5px;
+  }
+    .button {
+    width: 100px;
+    height: 0px;
+    font-size: 8px;
+  }
+  .header__twitter {
+    width: 25px;
+  }
+  .header__facebook {
+    width: 25px;
+  }
+}
 @media (min-width: 992px) and (max-width: 1200px){
   .header_brand {
     width: 40%;
-    margin-left: 15%;
-    
+    margin-left: -2%;
+    margin-top: 4px;
   }
   .header_brand span {
     font-size: 18px;
@@ -352,6 +368,7 @@ button svg {
   .header_nav {
     width: 10%;
     left: 379px;
+    margin-top: 18px;
   }
   .nav-link {
     font-size: 14px;
@@ -359,23 +376,26 @@ button svg {
     padding: 18px;
   }
   .header_social {
+    display: flex;
     bottom: 96px;
     left: 100px;
-  }
-  .social {
-    display: flex;
+    margin-top: -4px;
   }
   .button {
     width: 110px;
     height: 22px;
+        font-size: 8px;
+  }
+    .header__twitter {
+    width: 25px;
+  }
+  .header__facebook {
+    width: 25px;
   }
   .header__github {
     width: 25px;
     position: relative;
-    top: -3px;
-  }
-  .button {
-    font-size: 8px;
+    left: -10.7vw;
   }
   .button__icon {
     width: 12px;
