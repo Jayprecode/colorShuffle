@@ -1,0 +1,385 @@
+@font-face {
+  font-family: Blacklisted;
+  src: url('../font/Blacklisted.ttf');
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #33414e;
+  height: 100vh;
+}
+.header {
+  background-color: #171717;
+  height: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 3;
+  position: relative;
+  justify-content: center;
+  width: 100vw;
+}
+.header__branding {
+  display: inline-block;
+  margin-right: 1rem;
+  padding-bottom: 0.3125rem;
+  padding-top: 0.3125rem;
+  height: 99.9%;
+  font-size: 20px;
+  width: 100vw;
+}
+.header_brand {
+    width: 15vw;
+}
+.header_brand span {
+  font-family: 'Blacklisted';
+  font-size: 17px;
+  color: #FFF;
+  position: relative;
+  width: 20px;
+  padding-bottom: 55px;
+  left: 50px;
+}
+.header_brand svg {
+    position: relative;
+  width: 20px;
+  top: 2px;
+  color: #FFF;
+}
+.header_nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    bottom: 47px;
+}
+.nav-item {
+  position: relative;
+  height: 30px;
+  width: 81.750px;
+  margin: 0;
+}
+.nav-link {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  bottom: 5px;
+  padding: 8px;
+}
+.nav-link:hover {
+  font-weight: 900;
+  color: #9b9b9b;
+}
+
+.selected {
+    font-weight: 900;
+    font-size: 15px;
+    color: #6d6d6d;
+}
+
+.header_social {
+  list-style-type: none;
+  display: flex;
+    float: right;
+    position: relative;
+    bottom: 100px;
+    right: 50px;
+}
+
+.header__github {
+  width: 32px;
+  height: 32px;
+  fill: #000;
+  display: flex;
+  top: 40px;
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+}
+.ml10 {
+  margin-left: 34px;
+} 
+
+#content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+h2 {
+  position: relative;
+  color:#e7e1e1;
+  font-weight: 700;
+  font-size: 2.4em;
+  line-height: 1.2;
+  margin: 0 0 15px 0;
+}
+h2 span {
+  font-size: 1.7rem;
+  color: #480048;
+}
+
+button:hover {
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.4);
+}
+button svg {
+  position: relative;
+  width: 20px;
+  top: 3.5px;
+}
+#btn {
+  width: 128px;
+  height: 48px;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: normal;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 30px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  outline: none;
+  background-color: #efefef;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.color_rotate {
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 100px;
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+    z-index: 0;
+    animation: animate 1s linear infinite;
+    display: none;
+}
+
+.rotate {
+    font-size: 23px;
+    font-weight: 900;
+    color: #000;
+    position: relative;
+    top: -8.7px;
+    left: 8px;
+    cursor: pointer;
+
+}
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgba(229, 233, 235, 0.6), 0 0 0 0 rgba(227, 232, 233, 0.6);
+    }
+    30% {
+        box-shadow: 0 0 0 50px rgba(29,171,209,0), 0 0 0 0 rgba(223, 230, 231, 0.6);
+    }
+    65% {
+        box-shadow: 0 0 0 50px rgba(29,171,209,0), 0 0 0 30px rgba(211, 213, 214, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(29,171,209,0), 0 0 0 30px rgba(221, 226, 228, 0.6);
+    }
+}
+
+
+
+
+@media (min-width: 374px) and (max-width: 479px){
+  .header_brand {
+    width: 30%;
+    margin-left: -7%;
+  }
+  .header_brand span {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .header_brand svg {
+    top: 4px;
+  }
+
+  .header_nav {
+    width: 10%;
+    left: 62%;
+  }
+  .nav-link {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  h2 span {
+    font-size: 1.1rem;
+  }
+  .social {
+    display: none;
+  }
+
+}
+
+@media (min-width: 480px) and (max-width: 684px) {
+  .header_brand {
+    width: 40%;
+    margin-left: -5%;
+  }
+  .header_brand span {
+    font-size: 14px;
+  }
+    .header_nav {
+    width: 10%;
+    left: 40%;
+  }
+  .nav-link {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .header_social {
+    display: flex;
+    left: 100px;
+    bottom: 96px; 
+  }
+
+  .button {
+    width: 110px;
+    height: 22px;
+  }
+  .header__github {
+    width: 25px;
+    position: relative;
+    top: -2px;
+    left: -114px;
+  }
+  .header__facebook {
+    width: 25px;
+    top: -2px;
+  }
+  .header__twitter {
+    width: 25px;
+  }
+  .button {
+    font-size: 8px;
+  }
+  .button__icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+  }
+    h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  h2 span {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 685px) and (max-width: 768px) {
+  .header_brand {
+    width: 40%;
+    margin-left: 5%;
+  }
+    .header_nav {
+    width: 10%;
+    left: 68%;
+  }
+  .nav-link {
+    padding: 10px;
+  }
+  .header_social {
+    display: none;
+    left: 330px;
+    bottom: 96px;
+  }
+  .button {
+    width: 110px;
+    height: 22px;
+  }
+  .header__github {
+    width: 25px;
+    position: relative;
+    top: -4px;
+  }
+  .button {
+    font-size: 8px;
+  }
+  .button__icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+  }
+    h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  h2 span {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+  .header_brand {
+    width: 40%;
+    margin-left: 15%;
+    
+  }
+  .header_brand span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .header_nav {
+    width: 10%;
+    left: 379px;
+  }
+  .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 18px;
+  }
+  .header_social {
+    bottom: 96px;
+    left: 100px;
+  }
+  .social {
+    display: flex;
+  }
+  .button {
+    width: 110px;
+    height: 22px;
+  }
+  .header__github {
+    width: 25px;
+    position: relative;
+    top: -3px;
+  }
+  .button {
+    font-size: 8px;
+  }
+  .button__icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+  }
+}
