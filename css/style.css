@@ -18,7 +18,7 @@ body {
   width: 100vw;
 }
 .header {
-  background-color: #171717;
+  background-color: #1f0a79;
   height: 45px;
   padding-left: 20px;
   padding-right: 20px;
@@ -29,7 +29,10 @@ body {
   position: relative;
   justify-content: center;
   width: 100vw;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.2);
 }
+
 .header__branding {
   display: inline-block;
   margin-right: 1rem;
@@ -100,6 +103,9 @@ body {
     bottom: 100px;
     right: 50px;
 }
+  .header__github {
+    width: 45px !important;
+  }
 .social {
   margin: 0;
   padding: 0;
@@ -258,6 +264,9 @@ button svg {
     height: 12px;
     margin-right: 3px;
   }
+  .color_rotate {
+    float: right;
+  }
     h2 {
     font-size: 1.6rem;
     font-weight: 500;
@@ -269,12 +278,12 @@ button svg {
 @media (min-width: 600px) and (max-width: 767px) {
   .header_brand {
     width: 40%;
-    margin-left: -6%;
+    margin-left: -4%;
     margin-top: 4px;
   }
     .header_nav {
     width: 10%;
-    left: 38%;
+    margin-left: 42%;
     margin-top: 18px;
   }
   .nav-link {
@@ -282,9 +291,10 @@ button svg {
   }
   .header_social {
     display: flex;
-    left: 100px;
+    right: -10px;
     bottom: 96px;
     margin-top: -5px;
+    width: 150px;
   }
   .button {
     width: 100px;
@@ -298,9 +308,9 @@ button svg {
     width: 25px;
   }
   .header__github {
-    width: 25px;
+    width: 25px !important;
     position: relative;
-    left: -15vw;
+
   }
   .button__icon {
     width: 12px;
@@ -319,19 +329,14 @@ button svg {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-    .header__github {
-    width: 25px;
-    position: relative;
-    left: -12.9vw;
-  }
   .header_brand {
     width: 40%;
-    margin-left: -6%;
+    margin-left: -4%;
     margin-top: 4px;
   }
     .header_nav {
     width: 10%;
-    left: 42%;
+    margin-left: 40%;
     margin-top: 18px;
   }
   .nav-link {
@@ -339,9 +344,10 @@ button svg {
   }
   .header_social {
     display: flex;
-    left: 100px;
+    right: 120px;
     bottom: 96px;
     margin-top: -5px;
+    width: 30px;
   }
     .button {
     width: 100px;
@@ -354,7 +360,12 @@ button svg {
   .header__facebook {
     width: 25px;
   }
-}
+  
+}  .header__github {
+    width: 25px;
+    position: relative;
+    left: 3px;
+  }
 @media (min-width: 992px) and (max-width: 1200px){
   .header_brand {
     width: 40%;
@@ -367,7 +378,7 @@ button svg {
   }
   .header_nav {
     width: 10%;
-    left: 379px;
+    margin-left: 40%;
     margin-top: 18px;
   }
   .nav-link {
@@ -376,10 +387,11 @@ button svg {
     padding: 18px;
   }
   .header_social {
+    left: -30px;
     display: flex;
     bottom: 96px;
-    left: 100px;
     margin-top: -4px;
+    width: 150px;
   }
   .button {
     width: 110px;
@@ -393,9 +405,9 @@ button svg {
     width: 25px;
   }
   .header__github {
-    width: 25px;
+    width: 25px !important;
     position: relative;
-    left: -10.7vw;
+    left: -10.7px;
   }
   .button__icon {
     width: 12px;
