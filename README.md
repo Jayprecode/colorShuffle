@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
   </a>
     <a href="https://github.com/Jayprecode/colorShuffle/graphs/contributors" target="_blank">
-    <img src="https://img.shields.io/github/contributors/Jayprecode/colorSuffle.svg" alt="Contributors">
+    <img src="https://img.shields.io/github/contributors/Jayprecode/colorShuffle.svg" alt="Contributors">
   </a>
 </p>
 <p align="center">
