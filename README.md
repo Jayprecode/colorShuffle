@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://cdn.dribbble.com/users/6428270/screenshots/14790096/media/50ff82c13d9ae130cf483b939fd9bb13.png" width="240" />
+</p>
 
 <p align="center">
   <a href="#">
