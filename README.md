@@ -19,7 +19,7 @@ colorShuffle is a community contributed Shuffled collection of beautiful colors 
 &nbsp;
 
 ## About
-This is an effort to give back to the community, by the community. Hopefully this will help you draw inspiration and serve as a resource for picking gradients for your own projects.
+This is an effort to give back to the community, by the community. Hopefully this will help you draw inspiration and serve as a resource for picking Amazing colors and gradients for your own projects.
 
 
 &nbsp;
