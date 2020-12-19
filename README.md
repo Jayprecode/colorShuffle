@@ -19,7 +19,7 @@ Please feel free to open a new issue [here](https://github.com/Jayprecode/colorS
 
 ## License
 
-[MIT](https://github.com/Jayprecode/colorShuffle/blob/master/LICENSE.md)
+[MIT](https://github.com/Jayprecode/colorShuffle/blob/master/LICENCE.md)
 
 
 &nbsp;
