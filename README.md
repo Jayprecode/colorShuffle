@@ -1,3 +1,15 @@
+
+<p align="center">
+  <a href="#">
+    <img src="https://img.shields.io/badge/made%20with-love-E760A4.svg" alt="Made with love">
+  </a>
+  <a href="https://opensource.org/licenses/MIT" target="_blank">
+    <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+  </a>
+    <a href="https://github.com/Jayprecode/colorShuffle/graphs/contributors" target="_blank">
+    <img src="https://img.shields.io/github/contributors/Jayprecode/colorSuffle.svg" alt="Contributors">
+  </a>
+</p>
 <p align="center">
 colorShuffle is a community contributed Shuffled collection of beautiful colors & gradients for designers and developers
 </p>
