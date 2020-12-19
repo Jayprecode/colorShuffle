@@ -1,8 +1,10 @@
 {
   "name": "colorShuffle",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Shuffled collection of beautiful colors & gradients for designers and developers",
   "main": "index.js",
+  "author": "Jeremiah Olayiwola <Jayprecode@gmail.com>",
+  "private": true,
   "directories": {
     "doc": "docs"
   },
@@ -15,7 +17,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Jayprecode/colorShuffle/issues"
   },
