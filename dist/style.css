@@ -194,11 +194,9 @@ button svg {
     font-size: 23px;
     font-weight: 900;
     color: #fff;
-    position: relative;
-    top: -7px;
-    left: 8px;
+    position: fixed;
     cursor: pointer;
-
+    transform: translate(40%, -3%);
 }
 @keyframes animate {
     0% {
@@ -240,6 +238,14 @@ button svg {
     font-size: 15px;
     color: #fff !important;
 }
+.rotate {
+    font-size: 23px;
+    font-weight: 900;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    transform: translate(45%, -1%);
+}
 }
 
 
@@ -278,10 +284,13 @@ button svg {
         height: 30px;
     }
     .rotate {
-        font-size: 19px;
-        left: 7px;
-        top: -10px;
-    }
+    font-size: 19px;
+    font-weight: 900;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    transform: translate(40%, -1%);
+}
 }
 @media (max-width:610px) {
     #header {
@@ -330,11 +339,7 @@ button svg {
         width: 30px;
         height: 30px;
     }
-    .rotate {
-        font-size: 19px;
-        left: 7px;
-        top: -11px;
-    }
+
 }
 @media (max-width:480px) {
     #header {
@@ -379,8 +384,11 @@ button svg {
         height: 25px;
     }
     .rotate {
-        font-size: 19px;
-        left: 7px;
-        top: -15px;
-    }
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    transform: translate(55%, 5%);
+}
 }
