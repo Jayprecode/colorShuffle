@@ -1,6 +1,6 @@
 const colors = ["green", "red", "yellow", "blue", "cyan", "magenta"],
   hexaDecimal = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
- 
+
   //GENERATING HEX VALUE
   let hex, hex2;
 
@@ -9,9 +9,25 @@ const colors = ["green", "red", "yellow", "blue", "cyan", "magenta"],
   const num = ["to left", "to right", "to top", "to down"];
 
 let btn = document.getElementById("btn"),
-    color = document.querySelector(".color"),
-    navLinks = document.querySelectorAll(".nav-link");
+  color = document.querySelector(".color"),
+  checkBox = document.querySelector(".checkbox"),
+  header = document.getElementById("header"),
+  subHeader = document.querySelector(".sub_header"),
+  svg = document.querySelector(".colorful"),
+  svg2 = document.querySelector(".colorless"),
+  h = document.querySelector(".hr"),
+  navLinks = document.querySelectorAll(".nav-link");
 
+
+
+
+checkBox.addEventListener("change", function () {
+  header.classList.toggle("dark");
+  subHeader.classList.toggle("dark");
+  svg.classList.toggle("display");
+  svg2.classList.toggle("opacyful");
+  h.classList.toggle("w");
+});
 
 
 

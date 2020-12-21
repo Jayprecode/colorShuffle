@@ -18,17 +18,120 @@ body {
     -webkit-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-    background-color: #13171B;
-    height: 3.5em;
+    background-color: #fdfeff;
+    height: 50px;
     left: 0;
     line-height: 3.5em;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10000;
+    transition: background 0.2s linear;
+}
+
+
+
+#header.dark {
+    background-color: #100B20;
+}
+.sub_header.dark {
+    background-color:#100B20;
+}
+.hr.w {
+    border: 0.1 solid #ffffff;
+    opacity: 0.1;
+}
+
+
+
+
+hr {
+    border: 1 solid #575555;
+    z-index: 100;
+    position: fixed;
+    top: 2.6em;
+    opacity: 0.2;
+    width: 100%;
+}
+
+
+.sub_header {
+    background-color: #ffffff;
+    height: 2em;
+    position: fixed;
+    top: 2.9em;
+    width: 100%;
+    transition: background 0.2s linear;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1), 0px 8px 13px rgba(0, 0, 0, 0.1),
     0px 18px 23px rgba(0, 0, 0, 0.1);
 }
+.checkbox {
+    position: fixed;
+    top: 52px;
+    right: 20px;
+    -webkit-appearance: none;
+    width: 37px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+.checkbox:checked {
+    background-color: #9ca09c;
+}
+.checkbox::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 20px;
+    top: 4px;
+    left: 4px;
+    transition: .3s linear;
+}
+.checkbox:checked::before {
+    left: 20px;
+}
+#Capa_1 {
+    position: fixed;
+    top: 53px;
+    right: 5.3em;
+    cursor: pointer;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding-right: 24px;
+}
+#Capa_2 {
+    position: fixed;
+    top: 54px;
+    right: 9.6em;
+    cursor: pointer;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding-right: 27px;
+}
+#Capa_3 {
+    position: fixed;
+    top: 54px;
+    right: 14.5em;
+    cursor: pointer;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding-right: 27px;
+}
+
+
+
+.display {
+    display: none;
+}
+.colorless {
+    opacity:0;
+}
+.opacyful {
+    opacity: 100;
+}
+
+
 #header a {
     color: #fff;
     text-decoration: none;
@@ -43,19 +146,26 @@ body {
     display: inline-block;
     padding-left: 0;
     font: 13.5px 'Nunito';
+    font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
 }
-#header .brand {
+#header .brand svg{
     height: inherit;
     line-height: inherit;
-    padding-left: 2em;
+    left: 2em;
     position: relative;
-    bottom: -.5em;
-    white-space: nowrap;
-    font-family: 'pacifico', cursive;
+    bottom: -.3em;
+    z-index: 200;
 }
-
+#header .brand svg:nth-child(2) {
+    height: inherit;
+    line-height: inherit;
+    left: 2em;
+    bottom: 2px;
+    position: absolute;
+    z-index: 100;
+}
 
 #header .header-nav {
     position: relative;
@@ -63,10 +173,12 @@ body {
 }
 #header .header-nav li a {
     margin-right: 15px;
-    color: #424a56;
+    color: #696e75;
 }
 #header .header-nav li .nav-link:hover {
-    color: #fff;
+    color: #3220b6;
+    font-weight: 900;
+    font-size: 15px;
 }
 #header .header-nav li .nav-link:active {
     background-color: transparent !important;
@@ -74,16 +186,6 @@ body {
 #header .header-nav li.current .nav-link {
     color: #fff;
 }
-
-
-
-.selected {
-    font-weight: 900;
-    font-size: 15px;
-    color: #fff !important;
-}
-
-
 #header .links ul li {
     margin-left: 1em;
     padding-left: 1.5em;
@@ -91,9 +193,11 @@ body {
 #header.links ul li a {
     border-bottom: 0;
 }
-
-
-
+.selected {
+    font-weight: 900;
+    font-size: 15px;
+    color: #DF531E !important;
+}
 #header .header-social {
 	font-size: 20px;
    font-weight: normal;
@@ -111,6 +215,9 @@ body {
     color: #fff; 
     font-size: 23px;
 } 
+
+
+
 
 
 /*Content*/
@@ -165,28 +272,7 @@ button svg {
   width: 20px;
   top: 3.5px;
 }
-.color_rotate {
-    float: right;
-    margin-right: 10px;
-    margin-top: 65px;
-    background-color:#29333d;
-    border-radius: 100px;
-    font-size: 30px;
-    width: 35px;
-    height: 35px;
-    z-index: 0;
-    animation: animate 1s linear infinite;
-    display: none;
-}
 
-.rotate {
-    font-size: 23px;
-    font-weight: 900;
-    color: #fff;
-    position: fixed;
-    cursor: pointer;
-    transform: translate(40%, -3%);
-}
 @keyframes animate {
     0% {
         box-shadow: 0 0 0 0 rgba(63, 65, 66, 0.6), 0 0 0 0 rgba(103, 112, 114, 0.6);
