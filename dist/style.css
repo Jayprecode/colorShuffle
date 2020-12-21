@@ -118,7 +118,19 @@ hr {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding-right: 27px;
 }
+#display {
+    position: relative;
+    top: .5em;
+    left: 34em;
+    width: 17em;
 
+}
+#display span {
+    font-size: .8rem;
+    color: #480048;
+    display: flex;
+    justify-content: center;
+}
 
 
 .display {
@@ -228,18 +240,6 @@ hr {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-}
-#content h2 {
-  position: relative;
-  color:#e7e1e1;
-  font-weight: 700;
-  font-size: 1.67em;
-  line-height: 1.2;
-  margin: 0 0 15px 0;
-}
-h2 span {
-    font-size: 1.3rem;
-    color: #480048;
 }
 #btn {
     width: 128px;
