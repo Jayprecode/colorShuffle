@@ -20,13 +20,17 @@ let btn = document.getElementById("btn"),
 
 
 
-
 checkBox.addEventListener("change", function () {
   header.classList.toggle("dark");
   subHeader.classList.toggle("dark");
   svg.classList.toggle("display");
   svg2.classList.toggle("opacyful");
   h.classList.toggle("w");
+  color.classList.toggle("wh");
+  navLinks[0].classList.toggle("cw");
+  navLinks[1].classList.toggle("cw");
+  navLinks[2].classList.toggle("cw");
+  navLinks[3].classList.toggle("cw");
 });
 
 
@@ -37,30 +41,26 @@ for (let i = 0; i < navLinks.length; i++) {
     navLinks[1].classList.remove("selected");
     navLinks[2].classList.remove("selected");
     navLinks[3].classList.remove("selected");
-    this.classList.add("selected")
+    this.classList.add("selected");
 
     this.textContent === "Basic" ?
       (basic(),
         color.textContent = "white",
-        document.body.style.background = "white",
-        rotateGradient.style.display = "none") :
+        document.body.style.background = "white") :
     
     this.textContent === "Hex" ?
       (hexValue(),
         color.textContent = "#FFFFFF",
-        document.body.style.background = "white",
-        rotateGradient.style.display = "none") :
+        document.body.style.background = "white") :
     
     this.textContent === "RGB" ?
       (rgb(),
         color.textContent = "rgb(255, 255, 255)",
-        document.body.style.background = "white",
-        rotateGradient.style.display = "none") :
+        document.body.style.background = "white") :
     
       (gradient(),
         color.textContent = "linear-gradient(#FFFFFF, #FF8F8F)",
-        document.body.style.background = "white",
-        rotateGradient.style.display = "block");
+        document.body.style.background = "white");
   });
 }
 
