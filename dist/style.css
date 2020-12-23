@@ -75,7 +75,7 @@ body {
 }
 #header .header-nav li .nav-link  {
     margin-right: 15px;
-    color: #66696d;
+    color: #707375;
 }
 #header .header-nav li .nav-link.cw {
     color:  #dbd8d8;
@@ -119,7 +119,9 @@ body {
     color: #fff; 
     font-size: 23px;
 } 
-
+#Bold.wgit {
+    fill: #fff;
+}
 .selected {
     font-weight: 900;
     font-size: 15px;
@@ -214,6 +216,18 @@ hr {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding-right: 27px;
 }
+#Capa_1.l {
+    fill: #fff;
+    border-right: 1px solid rgba(216, 213, 213, 0.3);
+}
+#Capa_2.l {
+    fill: #fff;
+    border-right: 1px solid rgba(216, 213, 213, 0.3);
+}
+#Capa_3.l {
+    fill: #fff;
+    border-right: 1px solid rgba(216, 213, 213, 0.3);
+}
 #display {
     position: absolute;
     top: 50%;
@@ -274,10 +288,10 @@ hr {
     vertical-align: middle;
     border: 1px solid transparent;
     padding: 8px 16px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
     letter-spacing: normal;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'pacifico';
     line-height: 30px;
     border-radius: 0.25rem;
     cursor: pointer;
@@ -294,7 +308,7 @@ button:hover {
 button svg {
   position: relative;
   width: 20px;
-  top: 3.5px;
+  top: 5.2px;
 }
 
 footer {

@@ -16,6 +16,10 @@ let btn = document.getElementById("btn"),
   svg = document.querySelector(".colorful"),
   svg2 = document.querySelector(".colorless"),
   h = document.querySelector(".hr"),
+  f1 = document.getElementById("Capa_1"),
+  f2 = document.getElementById("Capa_2"),
+  f3 = document.getElementById("Capa_3"),
+  bgit = document.getElementById("Bold"),
   navLinks = document.querySelectorAll(".nav-link");
 
 
@@ -31,6 +35,10 @@ checkBox.addEventListener("change", function () {
   navLinks[1].classList.toggle("cw");
   navLinks[2].classList.toggle("cw");
   navLinks[3].classList.toggle("cw");
+  f1.classList.toggle("l");
+  f2.classList.toggle("l");
+  f3.classList.toggle("l");
+  bgit.classList.toggle("wgit");
 });
 
 
@@ -62,7 +70,7 @@ for (let i = 0; i < navLinks.length; i++) {
         color.textContent = "linear-gradient(#FFFFFF, #FF8F8F)",
         document.body.style.background = "white");
   });
-}
+};
 
 
 //BASIC
