@@ -50,7 +50,7 @@ for (let i = 0; i < navLinks.length; i++) {
     navLinks[2].classList.remove("selected");
     navLinks[3].classList.remove("selected");
     this.classList.add("selected");
-
+      
         this.textContent === "BASIC"
       ? (basic(),
         (color.textContent = "white"),
@@ -68,16 +68,19 @@ for (let i = 0; i < navLinks.length; i++) {
         (color.textContent = "#FFFFFF - #FF8F8F"),
         (document.body.style.background = "#FFFFFF"))
   });
-};
+}
 
 
 //BASIC
+//     navLinks[0].addEventListener("click", function () {
+//       basic();
+// })
 function basic() {
   //WHEN BUTTON IS CLICKED
   btn.addEventListener("click", function () {
     // Get random number between 0 - 3
     let randomNumber = getRandomNumber();
-    document.body.style.backgroundColor = colors[randomNumber];
+    document.body.style.background = colors[randomNumber];
     color.textContent = colors[randomNumber];
   });
 
@@ -90,6 +93,9 @@ function basic() {
 
 
 //HEX
+// navLinks[0].addEventListener("click", function () {
+//   hexValue();
+// })
 function hexValue() {
   //WHEN BUTTON IS CLICKED
   btn.addEventListener("click", function () {
@@ -109,6 +115,9 @@ function hexValue() {
 
 
 //RGB
+//   navLinks[1].addEventListener("click", function () {
+//     rgb();
+// });
 function rgb() {
     //WHEN BUTTON IS CLICKED
     btn.addEventListener("click", function () {
@@ -130,6 +139,9 @@ function rgb() {
 
 
 //GRADIENTS
+      // navLinks[2].addEventListener("click", function () {
+      //   gradient();
+      // });
 function gradient() {
   //WHEN BUTTON IS CLICKED
   btn.addEventListener("click", function () {
@@ -144,6 +156,9 @@ function gradient() {
       "linear-gradient(" + hex + ", " + hex2 + ")";
     color.textContent =  hex + " - " + hex2 ;
   });
+
+
+
   //ROTATE GRADIENT
   rotateGradient.addEventListener("click", function () {
     let numD = random();
@@ -155,5 +170,4 @@ function gradient() {
     return Math.floor(Math.random() * num.length);
   }
 }
-
 
