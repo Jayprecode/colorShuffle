@@ -5,7 +5,7 @@ const colors = ["green", "red", "yellow", "blue", "cyan", "magenta"],
   let hex, hex2;
 
   //ROTATE GRADIENT
-  let rotateGradient = document.querySelector(".color_rotate");
+  let rotateGradient = document.getElementById("Capa_1");
   const num = ["to left", "to right", "to top", "to down"];
 
 let btn = document.getElementById("btn"),
@@ -51,24 +51,22 @@ for (let i = 0; i < navLinks.length; i++) {
     navLinks[3].classList.remove("selected");
     this.classList.add("selected");
 
-    this.textContent === "Basic" ?
-      (basic(),
-        color.textContent = "white",
-        document.body.style.background = "white") :
-    
-    this.textContent === "Hex" ?
-      (hexValue(),
-        color.textContent = "#FFFFFF",
-        document.body.style.background = "white") :
-    
-    this.textContent === "RGB" ?
-      (rgb(),
-        color.textContent = "rgb(255, 255, 255)",
-        document.body.style.background = "white") :
-    
+        this.textContent === "BASIC"
+      ? (basic(),
+        (color.textContent = "white"),
+        (document.body.style.background = "white"))
+      : this.textContent === "HEX"
+      ? (hexValue(),
+        (color.textContent = "#FFFFFF"),
+        (document.body.style.background = "white"))
+      : this.textContent === "RGB"
+      ? (rgb(),
+        (color.textContent = "rgb(255, 255, 255)"),
+        (document.body.style.background = "white"))
+          : this.textContent === "GRADIENT"
       (gradient(),
-        color.textContent = "linear-gradient(#FFFFFF, #FF8F8F)",
-        document.body.style.background = "white");
+        (color.textContent = "#FFFFFF - #FF8F8F"),
+        (document.body.style.background = "#FFFFFF"))
   });
 };
 
@@ -137,14 +135,14 @@ function gradient() {
   btn.addEventListener("click", function () {
     //GENERATING HEX VALUE
     hex = "#000000".replace(/0/g, function () {
-      return (~~(Math.random() * 16)).toString(16);
+      return (~~(Math.random() * 16)).toString(16).toUpperCase();
     });
     hex2 = "#000000".replace(/0/g, function () {
-      return (~~(Math.random() * 16)).toString(16);
+      return (~~(Math.random() * 16)).toString(16).toUpperCase();
     });
     document.body.style.background =
       "linear-gradient(" + hex + ", " + hex2 + ")";
-    color.textContent = "linear-gradient(" + hex + ", " + hex2 + ")";
+    color.textContent =  hex + " - " + hex2 ;
   });
   //ROTATE GRADIENT
   rotateGradient.addEventListener("click", function () {

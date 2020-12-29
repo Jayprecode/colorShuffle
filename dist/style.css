@@ -9,8 +9,13 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     height: 100vh;
 }
-
-
+/* #my-canvas {
+    padding: 0;
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: #100B20;
+} */
 
 /* Header */
 
