@@ -3,50 +3,31 @@ let btn = document.getElementById("btn"),
   checkBox = document.querySelector(".checkbox"),
   hdr = document.getElementById("header"),
   s_hdr = document.querySelector(".sub_header"),
-  svg = document.querySelector(".colorful"),
-  svg2 = document.querySelector(".colorless"),
-  h = document.querySelector(".hr"),
+  svg = document.querySelector(".wm"),
+  svg2 = document.querySelector(".dm"),
+  hl = document.querySelector(".hr"),
   f1 = document.getElementById("Capa_1"),
   f2 = document.getElementById("Capa_2"),
   git = document.getElementById("Bold"),
-  navLinks = document.querySelectorAll(".nav-link");
-
-
-//Darkmode
-
-checkBox.addEventListener("change", function () {
-  hdr.classList.toggle("dark");
-  s_hdr.classList.toggle("dark");
-  svg.classList.toggle("display");
-  svg2.classList.toggle("opacyful");
-  h.classList.toggle("w");
-  color.classList.toggle("wh");
-  navLinks[0].classList.toggle("cw");
-  navLinks[1].classList.toggle("cw");
-  navLinks[2].classList.toggle("cw");
-  navLinks[3].classList.toggle("cw");
-  f1.classList.toggle("l");
-  f2.classList.toggle("l");
-  git.classList.toggle("wgit");
-});
+  n_l_s = document.querySelectorAll(".nav-link");
 
 
 
 //Navigation
-for (let i = 0; i < navLinks.length; i++) {
-  navLinks[i].addEventListener("click", function () {
-    navLinks[0].classList.remove("selected");
-    navLinks[1].classList.remove("selected");
-    navLinks[2].classList.remove("selected");
-    navLinks[3].classList.remove("selected");
+for (let i = 0; i < n_l_s.length; i++) {
+  n_l_s[i].addEventListener("click", function () {
+    n_l_s[0].classList.remove("selected");
+    n_l_s[1].classList.remove("selected");
+    n_l_s[2].classList.remove("selected");
+    n_l_s[3].classList.remove("selected");
     this.classList.add("selected");
       
         this.textContent === "BASIC"
       ? (basic(),
-        (color.textContent = "white"),
+        (color.textContent = "WHITE"),
         (document.body.style.background = "white"))
       : this.textContent === "HEX"
-      ? (hexValue(),
+      ? (hx(),
         (color.textContent = "#FFFFFF"),
         (document.body.style.background = "white"))
       : this.textContent === "RGB"
@@ -64,7 +45,7 @@ for (let i = 0; i < navLinks.length; i++) {
 //BASIC
 
 function basic() {
-  let b_c = ["green", "orange", "gray", "black", "red", "yellow", "blue", "cyan", "magenta"];
+  let b_c = ["GREEN", "ORANGE", "GREY", "BLACK", "RED", "YELLOW", "BLUE", "CYAN", "MAGENTA"];
   //WHEN BUTTON IS CLICKED
   btn.addEventListener("click", function () {
     // Get random number between 0 - 3
@@ -83,7 +64,7 @@ function basic() {
 
 //HEX
 
-function hexValue() {
+function hx() {
   let h = [
     0,
     1,
@@ -134,7 +115,7 @@ function rgb() {
     let g = Math.floor(Math.random() * 256);
     //Pick a "blue" from 0 - 255
     let b = Math.floor(Math.random() * 256);
-    return "rgb(" + r + ", " + g + ", " + b + ")";
+    return "RGB(" + r + ", " + g + ", " + b + ")";
   }
 }
 
@@ -187,7 +168,23 @@ function myFunction() {
   a_b.innerHTML = "New password Copied: <br>" + c_d.value;
 }
 
+//Darkmode
 
+checkBox.addEventListener("change", function () {
+  hdr.classList.toggle("dark");
+  s_hdr.classList.toggle("dark");
+  svg.classList.toggle("display");
+  svg2.classList.toggle("opacyful");
+  hl.classList.toggle("w");
+  color.classList.toggle("wh");
+  n_l_s[0].classList.toggle("cw");
+  n_l_s[1].classList.toggle("cw");
+  n_l_s[2].classList.toggle("cw");
+  n_l_s[3].classList.toggle("cw");
+  f1.classList.toggle("l");
+  f2.classList.toggle("l");
+  git.classList.toggle("wgit");
+});
 
 
 const gc = [
