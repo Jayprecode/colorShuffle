@@ -213,14 +213,7 @@ hr {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding-right: 27px;
 }
-#Capa_3 {
-    position: fixed;
-    top: 54px;
-    right: 14.5em;
-    cursor: pointer;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-    padding-right: 27px;
-}
+
 #Capa_1.l {
     fill: #fff;
     border-right: 1px solid rgba(216, 213, 213, 0.3);
@@ -229,10 +222,8 @@ hr {
     fill: #fff;
     border-right: 1px solid rgba(216, 213, 213, 0.3);
 }
-#Capa_3.l {
-    fill: #fff;
-    border-right: 1px solid rgba(216, 213, 213, 0.3);
-}
+
+
 #display {
     position: absolute;
     top: 50%;
@@ -240,8 +231,6 @@ hr {
     transform: translateX(-8em) translateY(-.5em);
     text-align: center;
     width: 17em;
-}
-#display span {
     font-size: 1rem;
     font-weight: 600;
     color: #423e3e;
@@ -251,8 +240,13 @@ hr {
     line-height: normal;
     text-align: center;
     letter-spacing: normal;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    top: 13px;
+    resize:none
 }
-#display span.wh {
+#display.wh {
     color: #fff;
     font-weight: 600;
 }
@@ -267,6 +261,26 @@ hr {
     opacity: 100;
 }
 
+
+
+.alertBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 30vh;
+    background: #d8cff3;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1em;
+    display: none;
+    z-index: 1;
+}
+.alertBox.active {
+    display: grid;
+    place-content: center;
+}
 
 
 

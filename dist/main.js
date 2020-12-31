@@ -1,31 +1,22 @@
-const colors = ["green","orange", "gray", "black", "red", "yellow", "blue", "cyan", "magenta"],
-  hexaDecimal = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-
-  //GENERATING HEX VALUE
-  let hex, hex2;
-
-  //ROTATE GRADIENT
-  let rotateGradient = document.getElementById("Capa_1");
-  const num = ["to left", "to right", "to top", "to down"];
-
 let btn = document.getElementById("btn"),
   color = document.querySelector(".color"),
   checkBox = document.querySelector(".checkbox"),
-  header = document.getElementById("header"),
-  subHeader = document.querySelector(".sub_header"),
+  hdr = document.getElementById("header"),
+  s_hdr = document.querySelector(".sub_header"),
   svg = document.querySelector(".colorful"),
   svg2 = document.querySelector(".colorless"),
   h = document.querySelector(".hr"),
   f1 = document.getElementById("Capa_1"),
   f2 = document.getElementById("Capa_2"),
-  bgit = document.getElementById("Bold"),
+  git = document.getElementById("Bold"),
   navLinks = document.querySelectorAll(".nav-link");
 
 
+//Darkmode
 
 checkBox.addEventListener("change", function () {
-  header.classList.toggle("dark");
-  subHeader.classList.toggle("dark");
+  hdr.classList.toggle("dark");
+  s_hdr.classList.toggle("dark");
   svg.classList.toggle("display");
   svg2.classList.toggle("opacyful");
   h.classList.toggle("w");
@@ -36,11 +27,12 @@ checkBox.addEventListener("change", function () {
   navLinks[3].classList.toggle("cw");
   f1.classList.toggle("l");
   f2.classList.toggle("l");
-  bgit.classList.toggle("wgit");
+  git.classList.toggle("wgit");
 });
 
 
 
+//Navigation
 for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener("click", function () {
     navLinks[0].classList.remove("selected");
@@ -72,17 +64,18 @@ for (let i = 0; i < navLinks.length; i++) {
 //BASIC
 
 function basic() {
+  let b_c = ["green", "orange", "gray", "black", "red", "yellow", "blue", "cyan", "magenta"];
   //WHEN BUTTON IS CLICKED
   btn.addEventListener("click", function () {
     // Get random number between 0 - 3
     let randomNumber = getRandomNumber();
-    document.body.style.background = colors[randomNumber];
-    color.textContent = colors[randomNumber];
+    document.body.style.background = b_c[randomNumber];
+    color.textContent = b_c[randomNumber];
   });
 
   //GENERATING RANDOM COLOR VALUES
   function getRandomNumber() {
-    return Math.floor(Math.random() * colors.length);
+    return Math.floor(Math.random() * b_c.length);
   }
 }
 
@@ -91,18 +84,36 @@ function basic() {
 //HEX
 
 function hexValue() {
+  let h = [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+  ];
   //WHEN BUTTON IS CLICKED
   btn.addEventListener("click", function () {
-    let hexColor = "#";
+    let h_c = "#";
     for (var i = 0; i < 6; i++) {
-      hexColor += hexaDecimal[getRandomNumber()];
+      h_c += h[getRandomNumber()];
     }
-    color.textContent = hexColor;
-    document.body.style.background = `${hexColor}`;
+    color.textContent = h_c;
+    document.body.style.background = `${h_c}`;
   });
   //GENERATING RANDOM HEX VALUES
   function getRandomNumber() {
-    return Math.floor(Math.random() * hexaDecimal.length);
+    return Math.floor(Math.random() * h.length);
   }
 }
 
@@ -110,27 +121,30 @@ function hexValue() {
 
 //RGB
 function rgb() {
-    //WHEN BUTTON IS CLICKED
-    btn.addEventListener("click", function () {
-      document.body.style.background = randomColor();
-      color.textContent = randomColor();
-    });
-    //GENERATING RANDOM RGB NUMBERS/values
-    function randomColor() {
-      //Pick a "red" from 0 - 255
-      let r = Math.floor(Math.random() * 256);
-      //Pick a "green" from 0 - 255
-      let g = Math.floor(Math.random() * 256);
-      //Pick a "blue" from 0 - 255
-      let b = Math.floor(Math.random() * 256);
-      return "rgb(" + r + ", " + g + ", " + b + ")";
-    }
+  //WHEN BUTTON IS CLICKED
+  btn.addEventListener("click", function () {
+    document.body.style.background = randomColor();
+    color.textContent = randomColor();
+  });
+  //GENERATING RANDOM RGB NUMBERS/values
+  function randomColor() {
+    //Pick a "red" from 0 - 255
+    let r = Math.floor(Math.random() * 256);
+    //Pick a "green" from 0 - 255
+    let g = Math.floor(Math.random() * 256);
+    //Pick a "blue" from 0 - 255
+    let b = Math.floor(Math.random() * 256);
+    return "rgb(" + r + ", " + g + ", " + b + ")";
+  }
 }
 
 
 
 //GRADIENTS
 function gradient() {
+  //GENERATING HEX VALUE
+  let hex, hex2;
+
   //WHEN BUTTON IS CLICKED
   btn.addEventListener("click", function () {
     //GENERATING HEX VALUE
@@ -142,13 +156,15 @@ function gradient() {
     });
     document.body.style.background =
       "linear-gradient(" + hex + ", " + hex2 + ")";
-    color.textContent =  hex + " - " + hex2 ;
+    color.textContent = hex + " - " + hex2;
   });
 
-
+  //ROTATE GRADIENT
+  let r_g = document.getElementById("Capa_1");
+  const num = ["to left", "to right", "to top", "to down"];
 
   //ROTATE GRADIENT
-  rotateGradient.addEventListener("click", function () {
+  r_g.addEventListener("click", function () {
     let numD = random();
     document.body.style.background =
       "linear-gradient(" + num[numD] + ", " + hex + ", " + hex2 + ")";
@@ -158,12 +174,18 @@ function gradient() {
     return Math.floor(Math.random() * num.length);
   }
 }
-let d = document.getElementById("wrapper");
-document.getElementById("Capa_2").addEventListener("click", function () {
-  d.toBlob(function (blob) {
-      saveAs(blob, "output.png");
-    });
-});
+
+
+//Copy to Clipboard & Pop-up Modal
+function myFunction() {
+  let a_b = document.querySelector(".alertBox"),
+  c_d = document.getElementById("display");
+  c_d.select();
+  c_d.setSelectionRange(0, 9999);
+  document.execCommand("copy");
+  a_b.classList.toggle("active");
+  a_b.innerHTML = "New password Copied: <br>" + c_d.value;
+}
 
 
 
