@@ -158,15 +158,31 @@ function gradient() {
 
 
 //Copy to Clipboard & Pop-up Modal
+f2.addEventListener("click", function () {
+  myFunction();
+});
+
 function myFunction() {
-  let a_b = document.querySelector(".alertBox"),
+  let cp = document.querySelector("#popup .close-popup"),
+    pc = document.querySelector(".popup-content"),
+    h1 = document.querySelector(".popup-content .color_copied"),
+    cv = document.querySelector(".color_value"),
   c_d = document.getElementById("display");
   c_d.select();
   c_d.setSelectionRange(0, 9999);
   document.execCommand("copy");
-  a_b.classList.toggle("active");
-  a_b.innerHTML = "New password Copied: <br>" + c_d.value;
+
+
+  document.body.classList.add("activepopup");
+  h1.textContent = "Color Copied: ";
+  cv.textContent = c_d.value+";";
+  pc = h1 + cv;
+
+  cp.addEventListener("click", function () {
+    document.body.classList.remove("activepopup");
+  });
 }
+
 
 //Darkmode
 
