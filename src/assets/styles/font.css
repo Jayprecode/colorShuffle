@@ -1,0 +1,33 @@
+/* HK Gorkest */
+
+@font-face {
+  font-family: 'colorShuffle INT';
+  src: url('../fonts/Inter-Regular.ttf') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'colorShuffle INT';
+  src: url('../fonts/Inter-Medium.ttf') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'colorShuffle INT';
+  src: url('../fonts/Inter-Bold.ttf') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'colorShuffle INT';
+  src: url('../fonts/Inter-Black.ttf') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
