@@ -16,7 +16,10 @@ import Footer from "../Components/footer";
 
 /* ------------------------- Component Dependencies ------------------------- */
 const Home = lazy(() => import("../pages"));
-const Explore = lazy(() => import("../pages/explore"));
+const ExploreGrads = lazy(() => import("../pages/exploreGradient"));
+const ExplorePalettes = lazy(() => import("../pages/explorePallets"));
+const GenerateGrads = lazy(() => import("../pages/generateGradients"));
+const GeneratePalettes = lazy(() => import("../pages/generatePallets"));
 
 /* ---------------------------- Routes PropTypes ---------------------------- */
 
@@ -38,7 +41,22 @@ const routes = ({ location }) => (
                         <Suspense fallback={<PrimaryLogo />}>
                             <Switch location={location}>
                                 <Route exact path="/" component={Home} />
-                                <Route path="/explore" component={Explore} />
+                                <Route
+                                    path="/explore-gradients"
+                                    component={ExploreGrads}
+                                />
+                                <Route
+                                    path="/explore-palettes"
+                                    component={ExplorePalettes}
+                                />
+                                <Route
+                                    path="/generate-gradient"
+                                    component={GenerateGrads}
+                                />
+                                <Route
+                                    path="/generate-palette"
+                                    component={GeneratePalettes}
+                                />
                             </Switch>
                         </Suspense>
                     </CSSTransition>

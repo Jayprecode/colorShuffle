@@ -40,7 +40,7 @@ const NavCodify = memo(({ location }) => (
                             activeClassName="active"
                             exact
                             as={NavLink}
-                            to="/generate"
+                            to="/generate-gradient"
                         >
                             Generate Gradient
                         </NavDropdown.Item>
@@ -58,7 +58,7 @@ const NavCodify = memo(({ location }) => (
                             activeClassName="active"
                             exact
                             as={NavLink}
-                            to="/gradients"
+                            to="/explore-gradients"
                         >
                             Explore Gradient
                         </NavDropdown.Item>
@@ -66,7 +66,7 @@ const NavCodify = memo(({ location }) => (
                             activeClassName="active"
                             exact
                             as={NavLink}
-                            to="/palettes"
+                            to="/explore-palettes"
                         >
                             Explore Palette
                         </NavDropdown.Item>

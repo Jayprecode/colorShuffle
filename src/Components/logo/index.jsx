@@ -8,8 +8,8 @@ class PrimaryLogo extends PureComponent {
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="wm"
-                    width="193.991"
-                    height="41.046"
+                    width="323.991"
+                    height="171.046"
                     viewBox="0 0 193.991 41.046"
                 >
                     <defs>
@@ -352,8 +352,8 @@ const LogoWrapper = styled.div`
     background: #fff8f0;
     z-index: 9999;
     svg {
-        width: 100px;
-        height: 100px;
+        width: 500px;
+        height: 500px;
         animation-iteration-count: infinite;
         animation-duration: 1s;
         animation-direction: alternate;
