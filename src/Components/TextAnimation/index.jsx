@@ -21,6 +21,7 @@ const animation = keyframes`
 const Wrapper = styled.span`
     display: inline-block;
     color: var(--theme-primary) !important;
+    padding-left: 5px;
     span {
         display: inline-block;
         opacity: 0;
