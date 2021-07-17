@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import styled from "styled-components";
 
-class PrimaryLogo extends PureComponent {
+class PrimeLogo extends PureComponent {
     render() {
         return (
             <LogoWrapper>
@@ -360,4 +360,4 @@ const LogoWrapper = styled.div`
     }
 `;
 
-export default PrimaryLogo;
+export default PrimeLogo;

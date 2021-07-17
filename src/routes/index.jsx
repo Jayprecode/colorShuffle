@@ -11,7 +11,7 @@ import PropTypes from "prop-types";
 /* -------------------------- Internal Dependencies ------------------------- */
 import NavCodify from "../Components/navbar";
 import ErrorBoundary from "../Components/error-boundary";
-import PrimaryLogo from "../Components/logo";
+import PrimaryLogo from "../Components/logo-arts";
 import Footer from "../Components/footer";
 
 /* ------------------------- Component Dependencies ------------------------- */
